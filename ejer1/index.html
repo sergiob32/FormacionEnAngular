@@ -4,19 +4,21 @@
     <title>Super Web</title>
     <meta charset="utf-8">
     <meta keywords="bertin naranja super">
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
     <div id="contenedor">
         <header>
+            <a href="index.html" class="logo">Super Web!</a>
+            <div>
+                <input id="buscador" type="text" placeholder="Buscar" />
+                <div id="sombra">
+                <img src="imagenes/lupa.png" alt=lupa class="lupa" />
+                </div>
+            </div>
             <nav>
-                <form>
-                    <input id="buscador" type="text" placeholder="Buscar"><img src="imagenes/lupa.png" alt=lupa class="lupa">
-                </form>
-                <a href="index.html"><img src="imagenes/logo.png" alt="logo"></img></a>
-
                 <ul>
                     <li><a href="#">Noticias</a></li>
                     <li><a href="#">Opinion</a></li>
@@ -25,20 +27,21 @@
                 </ul>
             </nav>
         </header>
+    <div id="main">
         <article>
             <img src="imagenes/esperpento.jpg" alt="bertin">
             <h1>Articulo muy interesante</h1>
             <p>Una interesante reflexión sobre el bien,el mal,el regular, el no tan bueno,</br>Pablo Motos,Bertin
                 Osborne y los chistes de Arevalo</p></br>
-            <p class="raya">La Felguera 17 de Enero de 2016</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nibh sit amet arcu
+            <p class="rayina">La Felguera 17 de Enero de 2016</p>
+            <p class="parraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur nibh sit amet arcu
                 elementum, at dictum lorem placerat. Duis mattis tincidunt enim eu pulvinar. Vestibulum at enim maximus
                 purus lacinia aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse
                 consequat, urna a ultricies sollicitudin, lacus enim luctus sapien, et viverra sem nulla
                 fringilla quam. Aenean consequat, metus ut semper semper, felis nisi viverra augue, et aliquam diam
                 mauris nec sapien. Donec varius ligula enim, fermentum efficitur lectus lobortis sed. Cras fringilla
                 eleifend convallis. Fusce viverra accumsan augue ac mollis.</p>
-            <p>Nulla pulvinar egestas ultrices. Nulla finibus id ante vitae pulvinar. Nullam eleifend quam at ante
+            <p class="parraf">Nulla pulvinar egestas ultrices. Nulla finibus id ante vitae pulvinar. Nullam eleifend quam at ante
                 elementum, vel dictum est suscipit. Maecenas lacinia risus id luctus malesuada. In ut interdum magna, a
                 consectetur mauris. Quisque vehicula ultricies diam, a condimentum libero imperdiet ut. In feugiat
                 sodales justo, eget tempor eros blandit ut. Fusce varius nulla erat, in laoreet leo
@@ -100,7 +103,8 @@
                                  Vestibulum et auctor nunc. Nulla tincidunt neque diam, et blandit ante posuere a. In tincidunt,
                              </p>
                 </div>            
-        </section>
+            </section>
+        </div>
         <footer>
             <p>Super Web es una marca registrada de Super Web Enterprises. Wisconsin Alabama </p>
             <address>Super Web. Calle Jon 23 90210 Valdecardos de Arriba</address>
@@ -110,15 +114,13 @@
                 <li>Informacion Legal</li>
                 <li>Politica de Cookies</li>
             </ul>
-            <div id="social">
-                <ul id="navlist">
-                    <li id="fac"><a href="https://www.facebook.com/"></a></li>
-                    <li id="twi"><a href="https://twitter.com/"></a></li>
-                    <li id="pin"><a href="https://www.pinterest.com/"></a></li>
-                    <li id="gog"><a href="https://plus.google.com/discover"></a></li>
-                  </ul>
+               <ul id="navlist">
+                    <li id="fac"><a href="https://www.facebook.com/">facebook</a></li>
+                    <li id="twi"><a href="https://twitter.com/">twitter</a></li>
+                    <li id="pin"><a href="https://www.pinterest.com/">pinterest</a></li>
+                    <li id="gog"><a href="https://plus.google.com/discover">google</a></li>
+                </ul>
                   
-            </div>
         </footer>
     </div> <!-- fin div contenedor   -->
 </body>

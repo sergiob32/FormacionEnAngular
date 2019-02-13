@@ -6,14 +6,32 @@
   position: auto;
   font-family:Arial, Helvetica, sans-serif;
 }
-
+#sombra{
+  background-color:#E0DEC6;
+  width:20px;
+  height:19px;
+}
 nav {
-  background-color: #ff8d30;
   text-align: right;
 }
 nav li {
   text-decoration: none;
   display: inline;
+}
+
+header{
+  position: relative;
+  background-color: #ff8d30;
+}
+.logo{
+  display: block;
+  position:absolute;
+  top:0px;
+  left:100px;
+  width: 400px;
+  height: 270px;
+  background: url("../imagenes/logo.png") no-repeat;
+  text-indent: -90000px;
 }
 #buscador {
   float: right;
@@ -21,23 +39,26 @@ nav li {
 article {
   width: 58%;
   margin-left:1em;
-  float:left;
  }
  article > p{
-   font-size:12px;
-   margin-left:0.5em;
-   padding-bottom:1em;
+  margin-left:0.5em;
    padding-top:1em;
-
+   font-size:16px;
+ }
+ .parraf{
+  font-size:12px;
+  padding-bottom:1em;
  }
  article >img{
-   width:100%;
-   margin:1em;
+   width:95%;
+   margin:0.3em;
+   margin-top:1em;
  }
 article >h1{
     font-weight: bold;
-    font-size: 3em;
+    font-size: 2.5em;
     margin-bottom:0.5em;
+    margin-left:0.5em;
 }
 h2{
   margin-top:1em;
@@ -45,14 +66,12 @@ h2{
 
 section {
   width: 34%;
-  float: right;
   margin-right:1em;
+  margin-left:1em;
 }
 .hsection{
     color:white;
     background-color:#ff8d30;
-    clear: both;
-    margin:0;
     font-size:20px;
 }
 .cuadradito {
@@ -76,6 +95,7 @@ section {
 #fotos {
   display: flex;
   width: 55%;
+  margin-bottom:3em;
 }
 /*OVERLAY DE LA IMAGEN*/
 
@@ -92,82 +112,89 @@ section {
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
 }
+#main{
+  display:flex;
+  flex-flow: nowrap;
+}
 
 /*FIN DEL OVERLAY*/
 footer {
   width: 100%;
-  clear: both;
   background-color: #7e7c7f;
-  margin-top: 2em;
   color:white;
 }
 #menufooter {
   text-decoration: underline;
-  display: flex;
-  justify-content: flex-end;
+  text-align: right;
+}
+#menufooter li {
+  display: inline;
 }
 #buscador {
   border: round solid #ff8d30 0.5px;
 }
 
+.rayina {
+  border-bottom: solid 1px black;
+  font-size:10px;
+}
 .raya {
   border-bottom: solid 1px black;
+  font-weight: bold;
 }
-
 /*PARA PONER LOS ICONITOS DE ABAJO*/
-#navlist {
-  position: relative;
+#navlist{
+  display: inline;
 }
-
 #navlist li {
   margin: 0;
   padding: 0;
   list-style: none;
-  position: absolute;
-  top: 0;
+  float:left;
+  height:45px;
+  width:45px;
 }
-
-#navlist li, #navlist a {
-  height: 44px;
-  display: block;
+#navlist a {
+  text-indent:-90000;
+  height:45px;
 }
 
 #fac {
   left: 0px;
-  width: 46px;
-  background: url('imagenes/media.png') 0 0;
+  width: 45px;
+  background: url("../imagenes/media.png") 0 0;
 }
 
 #twi {
-  left: 63px;
-  width: 43px;
-  background: url('imagenes/media.png') -47px 0;
+  left: 90px;
+  width: 45px;
+  background: url("../imagenes/media.png") -45px 0;
 }
 
 #pin{
-  left: 129px;
-  width: 43px;
-  background: url('imagenes/media.png') -91px 0;
+  left: 135px;
+  width: 45px;
+  background: url("../imagenes/media.png") -90px 0;
 }
 #gog{
-  left: 195px;
-  width: 43px;
-  background: url('imagenes/media.png') -91px 0;
+  left: 180px;
+  width: 45px;
+  background: url("../imagenes/media.png") -135px 0;
 }
-
-#gog a:hover {
-  background: url('imagenes/media.png') 0 -45px;
+/*HOVER DE LOS ICONITOS*/                        
+#fac a:hover {
+  background: url("../imagenes/media.png") 0 -45px;
 }
 
 #twi a:hover {
-  background: url('img_navsprites_hover.gif') -47px -45px;
+  background: url("../imagenes/media.png") -45px -45px;
 }
 
 #pin a:hover {
-  background: url('img_navsprites_hover.gif') -91px -45px;
+  background: url("../imagenes/media.png") -90px -45px;
 }
 #gog a:hover {
-  background: url('img_navsprites_hover.gif') -91px -45px;
+  background: url("../imagenes/media.png") -135px -45px;
 }
 /*FIN DEL CSS PARA PONER LOS ICONITOS*/
 label {
