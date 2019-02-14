@@ -1,162 +1,217 @@
 #contenedor {
-  width:1100px;
+  width: 1100px;
   height: 100%;
   background-color: #fdf5da;
   margin: auto;
-  position: auto;
-  font-family:Arial, Helvetica, sans-serif;
-}
-#sombra{
-  background-color:#E0DEC6;
-  width:20px;
-  height:19px;
-}
-nav {
-  text-align: right;
-}
-nav li {
-  text-decoration: none;
-  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-  position: relative;
+#sombra {
+  background-color: #E0DEC6;
+  width: 20px;
+  height: 19px;
+}
+
+header {
   background-color: #ff8d30;
 }
-.logo{
+
+nav {
+  text-align: right;
+  margin-top:90px;
+}
+
+nav li {
+  display: inline-block;
+  background-color:#FFC492;
+   border-right: solid 1 px black;
+
+}
+
+nav a {
+  text-decoration: none;
+  color:white;
+  display:block;
+ 
+}
+
+.logo {
   display: block;
-  position:absolute;
-  top:0px;
-  left:100px;
+  position: absolute;
+  left: 475px;
   width: 400px;
   height: 270px;
   background: url("../imagenes/logo.png") no-repeat;
   text-indent: -90000px;
+  margin-top:1em;
 }
+
 #buscador {
-  float: right;
+  border: round solid 0.5px #ff8d30;
+  margin-left:800px;
+  margin-top:5em;
+  height:2em;
 }
+
 article {
   width: 58%;
-  margin-left:1em;
- }
- article > p{
-  margin-left:0.5em;
-   padding-top:1em;
-   font-size:16px;
- }
- .parraf{
-  font-size:12px;
-  padding-bottom:1em;
- }
- article >img{
-   width:95%;
-   margin:0.3em;
-   margin-top:1em;
- }
-article >h1{
-    font-weight: bold;
-    font-size: 2.5em;
-    margin-bottom:0.5em;
-    margin-left:0.5em;
+  margin-left: 1em;
 }
-h2{
-  margin-top:1em;
+
+article>p {
+  margin-left: 0.5em;
+  padding-top: 1em;
+  font-size: 16px;
+}
+
+.parraf {
+  font-size: 12px;
+  padding-bottom: 1em;
+}
+
+article>img {
+  width: 95%;
+  margin: 0.3em;
+  margin-top: 1em;
+}
+
+article>h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+
+h2 {
+  margin-top: 1em;
 }
 
 section {
   width: 34%;
-  margin-right:1em;
-  margin-left:1em;
-}
-.hsection{
-    color:white;
-    background-color:#ff8d30;
-    font-size:20px;
-}
-.cuadradito {
-  border:solid 1px #ff8d30;
-  margin-right:0.5em;
-  margin-bottom:1em;
-  margin-top:1em;
-}
-.cuadradito> p {
-  width:60%;
-  float:right;
-  font-size:14px;
-  margin-top:0.5em;
-   
-}
-.cuadradito > img {
-  margin:0.5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
+.hsection {
+  color: white;
+  background-color: #ff8d30;
+  font-size: 20px;
+}
+
+.cuadradito {
+  border: solid 1px #ff8d30;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.cuadradito>p {
+  width: 60%;
+  float: right;
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+
+.cuadradito>img {
+  margin: 0.5em;
+}
 
 #fotos {
   display: flex;
   width: 55%;
-  margin-bottom:3em;
+  margin-bottom: 3em;
 }
+
+#main {
+  display: flex;
+  flex-flow: nowrap;
+}
+
 /*OVERLAY DE LA IMAGEN*/
 
 .container {
   position: relative;
   float: left;
-  margin-left:0.5em;
+  margin-left: 0.5em;
+  margin-top: 0.3em;
 }
 
 .container .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
+  position: absolute;
+  /* Position the background text */
+  bottom: 0;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
 }
-#main{
-  display:flex;
-  flex-flow: nowrap;
+
+.container .content :hover {
+  position: relative;
+  /* Position the background text */
+  bottom: 134;
+  /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
 }
 
 /*FIN DEL OVERLAY*/
+
 footer {
   width: 100%;
   background-color: #7e7c7f;
-  color:white;
+  color: white;
 }
+
 #menufooter {
   text-decoration: underline;
   text-align: right;
 }
+
 #menufooter li {
   display: inline;
 }
-#buscador {
-  border: round solid #ff8d30 0.5px;
+
+#menufooter a {
+  color: White;
+  margin-right: 1em;
 }
 
 .rayina {
   border-bottom: solid 1px black;
-  font-size:10px;
+  font-size: 10px;
 }
+
 .raya {
   border-bottom: solid 1px black;
   font-weight: bold;
 }
+
 /*PARA PONER LOS ICONITOS DE ABAJO*/
-#navlist{
+
+#navlist {
   display: inline;
 }
+
 #navlist li {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  float:left;
-  height:45px;
-  width:45px;
-}
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+ }
+
 #navlist a {
-  text-indent:-90000;
-  height:45px;
+  text-indent: -9000px;
+  height: 45px;
+  width: 45px;
+  display: block;
+  
 }
 
 #fac {
@@ -171,17 +226,20 @@ footer {
   background: url("../imagenes/media.png") -45px 0;
 }
 
-#pin{
+#pin {
   left: 135px;
   width: 45px;
   background: url("../imagenes/media.png") -90px 0;
 }
-#gog{
+
+#gog {
   left: 180px;
   width: 45px;
   background: url("../imagenes/media.png") -135px 0;
 }
-/*HOVER DE LOS ICONITOS*/                        
+
+/*HOVER DE LOS ICONITOS*/
+
 #fac a:hover {
   background: url("../imagenes/media.png") 0 -45px;
 }
@@ -193,35 +251,56 @@ footer {
 #pin a:hover {
   background: url("../imagenes/media.png") -90px -45px;
 }
+
 #gog a:hover {
   background: url("../imagenes/media.png") -135px -45px;
 }
+
 /*FIN DEL CSS PARA PONER LOS ICONITOS*/
+
 label {
   display: inline-block;
-  clear: left;
 }
+
 input {
   display: inline-block;
-  border: solid 1px #ff8d30;
+  border: solid 2px #ff8d30;
   margin-bottom: 0.5em;
+  margin-top:0.5em;
 }
+
 .centro {
   text-align: center;
+  font-size:1.5em;
+  font-weight:bold;
 }
+.personales{
+  margin-left:8em;
+}
+
 #radio {
-  float: left;
-  margin-left: 3em;
+  width:50%;
 }
+
 #boxes {
-  float: left;
+  margin-left:5em;
+  width:50%
 }
 
 select {
   margin-top: 1em;
-  border: solid 1px #ff8d30;
+  border: solid 2px #ff8d30;
 }
 .sub {
   background-color: #ff8d30;
   color: white;
+}
+.hct{
+  font-weight:bold;
+  font-size:2.5em;
+}
+#aficiones{
+  width:80%;
+  margin:auto;
+  display:flex;
 }
